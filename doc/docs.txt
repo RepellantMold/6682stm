@@ -1,0 +1,71 @@
+some digital stuff from Tran...
+
+   Okey, the only real attempt at programming in these filez is the digital
+muzik driver i did, all the rest of the stuff was rather quickly built around
+and to test that driver...
+
+
+PLAYD.EXE       -       player, plays the muzik filez
+   run with a filename "PLAYD DEVILSM"... the output is either SB mono or
+        SBPro stereo, depending on watcha got... press any key to stop play
+
+PLAYO.EXE       -       the same player except with a VGA only oscilliscope
+                        press ESC to stop play, and if you got an SBPro you
+                        can toggle between 2 types of waves with the spacebar
+
+
+DEVILSM         -       a MOD converted to STM converted to my format, still
+                          it came out ok...
+RAINT_NT        -       another MOD to STM to this conversion, this one had a
+                        bit more commands so its not exactly like it was...
+
+STM2668.EXE     -       converts STMs to a format my driver plays, only
+                        converts all instruments, all orders, all patterns,
+                        but in the patterns only the notes and volumes
+                        are converted, no special commands are converted...
+                        but pattern break and jump to order are...
+                        so the type of STM that would sound the same (not
+                        exactly cuz i use different mixing and output
+                        teqniques) is one with pure notes, and no commands,
+                        except pattern break and jump to order...
+   run with the following parameters:
+
+ STM2668 <file.STM> <fileout> <tempo>
+
+  file.STM  -  full path and filename of input .STM file...
+  fileout   -  any valid DOS filename
+  tempo     -  the tempo to convert to, i use a different measure than
+               ST, a tempo of 50 in st translates nicely into my tempo
+               of 3, 60 into 4 but it sounds a bit slow still...
+               but notice there should be only one tempo for the whole
+               .STM cuz theres only one tempo for the whole output song...
+
+
+TEST3D          -       an old vector test outfitted with new muzik driver
+                        to see how fast itll go now, and it does nicely...
+                        keys: 7,8,9 + rotation around X,Y,Z; 1,2,3 - rotation
+                              around same axes; 4,5,6 stop rotation around
+                              those axes
+                        any other key quits
+(by the way, this program is VGA only, and it doesnt autodetect)
+
+
+tech specs:
+        the mixing is always at 12048Hz, and itll sound fine even at 8mHz,
+        except if the CPU is overburdened, then itll just slow down, but
+        not too much, and so far no matter how much stress i put on my CPU
+        at its lowest speed, it hasn't yet crashed on me...
+
+        one problem though, on the SBPro the output will be a little lower
+        and slower cuz i cant figure out for what reason but i cant seem
+        to get the sampling rate high enough in stereo mode, even though
+        its well within the SBPro's limitations... but hey, not my fault
+        ok!, i just dont feel like spending $100 on a programmers manual...
+        so all the shit on this card up to now ive learned the hard way...
+
+
+        oh, and the stereo channels on the sbpro are left, right, right, left
+
+        oh also, of course if youre running in V86 mode on a 386, the output
+        will not be that good...
+
