@@ -2,6 +2,7 @@
 
 This format was only used in an "STM Player" coded by Tran.
 Please note that this is not finished, and only has what I feel confident is correct.
+All of this information is from doing hex editing on the files and making a bunch of test.
 This will be updated as needed.
 
 ## Header

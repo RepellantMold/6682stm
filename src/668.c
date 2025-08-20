@@ -136,6 +136,8 @@ static void load_pattern_668(FILE* f, pattern_t* p) {
 			verbose_printf("row %02d channel %1d: n=%02d s=%02d v=%02d",
 				       row_index + 1, b, current_row->note, current_row->sample,
 				       current_row->volume);
+		} else {
+			warn_printf("unknown command %02X", b);
 		}
 #endif
 	}
